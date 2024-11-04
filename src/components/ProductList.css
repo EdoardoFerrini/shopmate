@@ -45,3 +45,20 @@
     padding: 5px;
     display: inline;
   }
+
+  button {
+    border: 0px;
+    border-radius: 5px;
+    background-color: #0c68a1;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 7px 10px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 20px 10px;
+  }
+  
+  .filter{
+    display: flex;
+    justify-content: center;
+  }

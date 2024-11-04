@@ -2,17 +2,24 @@ import "./ProductList.css";
 import { useState, useEffect } from "react";
 
 export const ProductList = () => {
+
   const [products, setProducts] = useState([]);
-  console.log(products);
+  const [url, setUrl] = useState("http://localhost:8000/products");
+  const [counter, setCounter] = useState(0)
 
   useEffect(() => {
-    fetch("http://localhost:8000/products")
+    fetch(url)
       .then((response) => response.json())
       .then((data) => setProducts(data));
-  }, []);
+  }, [url]);
 
   return (
     <section>
+        <div className="filter">
+            <button className="available" onClick={()=> setUrl("http://localhost:8000/products")}>All</button>
+            <button onClick={()=> setUrl("http://localhost:8000/products?available=true")}>In Stock</button>
+        </div>
+
       {products.map((product) => (
         <div className="card">
           <p className="id">{product.id}</p>
