@@ -5,6 +5,7 @@
     max-width: 600px;
     border-radius: 5px;
   }
+  
   .card .id {
     background-color: #4e06a0;
     font-size: 12px;
@@ -57,7 +58,7 @@
     display: inline-block;
     margin: 20px 10px;
   }
-  
+
   .filter{
     display: flex;
     justify-content: center;
