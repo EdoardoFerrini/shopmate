@@ -1,8 +1,8 @@
 {
     "products" : [
-        { "id" : 1, "name": "Learn .NET", "available": true},
-        { "id" : 2, "name": "Learn React", "available": false},
-        { "id" : 3, "name": "Learn Angular", "available": false},
-        { "id" : 4, "name": "Learn HTML and CSS", "available": false}
+        { "id" : 1, "name": "Learn .NET", "price": 39.99, "available": true},
+        { "id" : 2, "name": "Learn React", "price": 39.99, "available": false},
+        { "id" : 3, "name": "Learn Angular", "price": 39.99, "available": false},
+        { "id" : 4, "name": "Learn HTML and CSS", "price": 39.99, "available": false}
     ]
 }
