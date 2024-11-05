@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useFetch } from "../hooks/useFetch";
 export const ProductList = () => {
   const [url, setUrl] = useState("http://localhost:8000/products");
-  const { data, loading } = useFetch(url);
+  const { data, loading, error } = useFetch(url);
 
   return (
     <section>
@@ -23,6 +23,7 @@ export const ProductList = () => {
         </button>
       </div>
       {loading && <p>loading products...</p>}
+      {error && <p>{error}</p>}
       {data && data.map((product) => (
         <div key={product.id} className="card">
           <p className="id">{product.id}</p>
